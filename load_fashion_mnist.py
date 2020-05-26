@@ -5,7 +5,7 @@ while k!=2:
 	if os.stat("file.txt").st_size==0:
 		print(k)
 		k+=1
-		os.system('python3 fashion_mnist.py')
+		os.system('python fashion_mnist.py')
 	else:
 		file=open("file.txt",'r')
 		input1=float(file.read())
@@ -27,5 +27,5 @@ while k!=2:
 			f=open("fashion_mnist.py",'w')
 			f.writelines(reader)
 			f.close()
-			os.system('python3 fashion_mnist.py')
+			os.system('python fashion_mnist.py')
 
