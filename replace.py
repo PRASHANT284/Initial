@@ -1,7 +1,0 @@
-file = open("load_fashion_mnist.py","r")
-k=file.read()
-file.close()
-k = k.replace("python","python3")
-file=open("load_fashion_mnist.py","w")
-file.write(k)
-file.close()
